@@ -13,6 +13,12 @@
       <FileRef
          location = "group:BBTableView/BBTableView.m">
       </FileRef>
+      <FileRef
+         location = "group:BBTableView/BBScrollView.h">
+      </FileRef>
+      <FileRef
+         location = "group:BBTableView/BBScrollView.m">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Demo/Demo.xcodeproj">

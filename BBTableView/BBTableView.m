@@ -101,11 +101,18 @@
 @implementation UITableViewCell (BBTableView)
 
 - (instancetype)initWithTable:(BBTableView *)table{
-    self = [self initWithFrame:CGRectMake(0, 0, table.frame.size.width, 0)];
-    [self setTableView:table];
-    [table addView:self];
+    return [self initWithTable:table height:0];
+}
+
+- (instancetype)initWithTable:(BBTableView *)table height:(CGFloat)height{
+    self = [self initWithFrame:CGRectMake(0, 0, table.frame.size.width, height)];
+    if (self) {
+        [self setTableView:table];
+        [table addView:self];
+    }
     return self;
 }
+
 
 - (BBTableView *)tableView {
     return objc_getAssociatedObject(self, _cmd);

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD86EC1A1BB8E25D00F750E5 /* BBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD86EC191BB8E25D00F750E5 /* BBScrollView.m */; settings = {ASSET_TAGS = (); }; };
 		BDC656251BB4F683005955D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC656241BB4F683005955D7 /* main.m */; };
 		BDC656281BB4F683005955D7 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC656271BB4F683005955D7 /* BBAppDelegate.m */; };
 		BDC6562B1BB4F683005955D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6562A1BB4F683005955D7 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD86EC181BB8E25D00F750E5 /* BBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBScrollView.h; path = ../../BBTableView/BBScrollView.h; sourceTree = "<group>"; };
+		BD86EC191BB8E25D00F750E5 /* BBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBScrollView.m; path = ../../BBTableView/BBScrollView.m; sourceTree = "<group>"; };
 		BDC656201BB4F683005955D7 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC656241BB4F683005955D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BDC656261BB4F683005955D7 /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 		BDCA59311BB4FF3800F60261 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BD86EC181BB8E25D00F750E5 /* BBScrollView.h */,
+				BD86EC191BB8E25D00F750E5 /* BBScrollView.m */,
 				BDCA59321BB4FF4500F60261 /* BBTableView.h */,
 				BDCA59331BB4FF4500F60261 /* BBTableView.m */,
 			);
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD86EC1A1BB8E25D00F750E5 /* BBScrollView.m in Sources */,
 				BDC6562B1BB4F683005955D7 /* ViewController.m in Sources */,
 				BDC656281BB4F683005955D7 /* BBAppDelegate.m in Sources */,
 				BDC656251BB4F683005955D7 /* main.m in Sources */,
