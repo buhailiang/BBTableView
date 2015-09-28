@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "BBTableView"
-  s.version      = "0.3.1"
+  s.version      = "0.3.2"
   s.summary      = "Use table view to layout a view auto resized with sub views height changed"
   s.homepage     = "https://github.com/buhailiang/BBTableView"
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.platform = :ios, "6.0"
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source = { :git => "https://github.com/buhailiang/BBTableView.git", :tag => "v0.3.1" }
+  s.source = { :git => "https://github.com/buhailiang/BBTableView.git", :tag => "v0.3.2" }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "BBTableView/*.{h,m}"
 
