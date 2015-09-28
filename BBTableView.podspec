@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "BBTableView/*.{h,m}"
 
-subspec "ScrollView" do |sp|
+s.subspec "ScrollView" do |sp|
     sp.source_files = "BBTableView/*Scroll*.{h,m}"
 end
 
-subspec "TableView" do |sp|
+s.subspec "TableView" do |sp|
     sp.source_files = "BBTableView/*Table*.{h,m}"
 end
 
