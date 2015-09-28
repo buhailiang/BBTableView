@@ -13,6 +13,10 @@
 - (void)updateCell:(UIView *)cell;
 - (void)reloadData; //to compatible with tableview
 
+- (void)addView:(UIView *)view;
+- (void)addView:(UIView *)view atIndex:(NSUInteger)idx;
+- (void)removeView:(UIView *)view;
+
 
 @end
 

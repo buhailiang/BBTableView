@@ -20,8 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self demoWithScrollView];
-    [self demoWithTableView];
+    [self demoWithScrollView];
+    //[self demoWithTableView];
 }
 
 - (void)demoWithScrollView{

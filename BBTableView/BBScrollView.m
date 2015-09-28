@@ -9,10 +9,20 @@
 #import "BBScrollView.h"
 #import <objc/runtime.h>
 
-@implementation BBScrollView
+@implementation BBScrollView {
+    NSMutableArray<UIView *> *cells;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        cells = [NSMutableArray array];
+    }
+    return self;
+}
 
 - (void)updateCell:(UIView *)cell {
-    NSUInteger index = [self.subviews indexOfObject:cell];
+    NSUInteger index = [cells indexOfObject:cell];
     [self reloadData:index];
 }
 
@@ -21,7 +31,6 @@
 }
 
 - (void)reloadData:(NSUInteger)index {
-    NSArray<UIView *> *cells = self.subviews;
     CGFloat top = 0;
     for (NSUInteger i = index; i < cells.count; i++) {
         CGRect f = cells[i].frame;
@@ -31,6 +40,23 @@
         }
         top = f.size.height+f.origin.y;
     }
+    self.contentSize = CGSizeMake(self.frame.size.width, top);
+}
+
+#pragma mark - view arry handlers
+- (void)addView:(UIView *)view {
+    [self addView:view atIndex:cells.count];
+}
+
+- (void)addView:(UIView *)view atIndex:(NSUInteger)idx {
+    if (idx > cells.count) {
+        idx = cells.count;
+    }
+    [cells insertObject:view atIndex:idx];
+}
+
+- (void)removeView:(UIView *)view {
+    [cells removeObject:view];
 }
 
 @end
@@ -45,6 +71,7 @@
     self = [self initWithFrame:CGRectMake(0, 0, table.frame.size.width, height)];
     if (self) {
         [self setTableView:table];
+        [table addView:self];
         [table addSubview:self];
     }
     return self;
